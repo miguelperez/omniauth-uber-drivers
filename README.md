@@ -38,6 +38,40 @@ end
 
 ```
 
+## Demo auth hash
+
+```ruby
+{
+  "provider"=>"uber",
+  "uid"=>"xxxxx-xxxxx-xxxxxxx-xxxxxx-xxxx",
+  "info"=>{
+    "first_name"=>"Miguel",
+    "last_name"=>"Perez",
+    "email"=>"my@email.com",
+    "picture"=>"profile url here",
+    "promo_code"=>"something here"
+  },
+  "credentials"=>{
+    "token"=>"TOKEN COMES HERE",
+    "refresh_token"=>"REFRESH HERE",
+    "expires_at"=>1483271536,
+    "expires"=>true
+  },
+  "extra"=> {
+    "raw_info"=> {
+      "email"=>"my@email.com",
+      "first_name"=>"Miguel",
+      "last_name"=>"Perez",
+      "mobile_verified"=>true,
+      "picture"=>"profile url here",
+      "promo_code"=>"something here",
+      "rider_id"=>"something here too",
+      "uuid"=>"xxxxx-xxxxx-xxxxxxx-xxxxxx-xxxx"
+    }
+  }
+}
+```
+
 ## License
 
 Copyright (c) 2016 by Miguel Perez
