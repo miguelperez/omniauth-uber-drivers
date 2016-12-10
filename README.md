@@ -33,7 +33,7 @@ Available scopes: `partner.accounts`, `partner.payments`, `partner.trips`.  Defa
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :uber_drivers, ENV['UBER_CLIENT_ID'], ENV['UBER_CLIENT_SECRET'], :scope => 'partner.accounts,partner.payments'
+  provider :uber_drivers, ENV['UBER_CLIENT_ID'], ENV['UBER_CLIENT_SECRET'], :scope => 'partner.accounts partner.payments'
 end
 
 ```
