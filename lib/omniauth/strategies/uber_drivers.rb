@@ -9,7 +9,7 @@ module OmniAuth
                               :authorize_url => 'https://login.uber.com/oauth/v2/authorize',
                               :token_url     => 'https://login.uber.com/oauth/v2/token'
 
-      uid { raw_info['uuid'] }
+      uid { raw_info['driver_id'] }
 
       info do
         {
