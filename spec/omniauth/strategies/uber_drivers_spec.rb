@@ -11,7 +11,7 @@ describe OmniAuth::Strategies::UberDrivers do
 
   context 'client options' do
     it 'should have correct name' do
-      expect(subject.options.name).to eq('uber')
+      expect(subject.options.name).to eq('uber_drivers')
     end
 
     it 'should have correct site' do

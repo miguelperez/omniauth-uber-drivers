@@ -5,7 +5,7 @@ module OmniAuth
     class UberDrivers < OmniAuth::Strategies::OAuth2
       DEFAULT_SCOPE = 'partner.accounts'
       option :name, :uber_drivers
-      option :client_options, :site          => 'https://api.uber.com',
+      option :client_options, :site          => 'https://api.uber.com/v1/partners',
                               :authorize_url => 'https://login.uber.com/oauth/v2/authorize',
                               :token_url     => 'https://login.uber.com/oauth/v2/token'
 
@@ -32,7 +32,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/partners/me').parsed || {}
+        @raw_info ||= access_token.get('/me').parsed || {}
       end
 
       def request_phase

@@ -49,7 +49,10 @@ end
     "last_name"=>"Perez",
     "email"=>"my@email.com",
     "picture"=>"profile url here",
-    "promo_code"=>"something here"
+    "promo_code"=>"something here",
+    "phone_number"=> "+12345678901",
+    "rating"=> 4.9,
+    "activation_status"=> "active"
   },
   "credentials"=>{
     "token"=>"TOKEN COMES HERE",
@@ -62,11 +65,13 @@ end
       "email"=>"my@email.com",
       "first_name"=>"Miguel",
       "last_name"=>"Perez",
-      "mobile_verified"=>true,
+      "phone_number"=> "+12345678901",
       "picture"=>"profile url here",
       "promo_code"=>"something here",
       "rider_id"=>"something here too",
-      "uuid"=>"xxxxx-xxxxx-xxxxxxx-xxxxxx-xxxx"
+      "uuid"=>"xxxxx-xxxxx-xxxxxxx-xxxxxx-xxxx",
+      "rating"=> 4.9,
+      "activation_status"=> "active"
     }
   }
 }
